@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome/css/font-awesome.min.css">
 
     <link rel="shortcut icon" href="/favicon.ico?1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
-    <title>RCABench | A collection of benchmark datasets for Root Cause Analysis with Machine Learning</title>
+    <title>Lemma-RCA| A Large Collection of Multi-modal Benchmark Datasets for Root Cause Analysis</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
@@ -35,7 +35,7 @@
 		        <span class="icon-bar"></span>
 	        </button>
             <a class="navbar-brand" href="/">
-            <span style="font-family: 'Merienda', cursive;">RCABench</span> </a>
+            <span style="font-family: 'Merienda', cursive;">Lemma-RCA</span> </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <div class="navbar-right">
@@ -44,19 +44,22 @@
                 <li ><a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     Datasets <span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                      <li><a href="docs/data.html">Product Review</a></li>
+                      <li class="divider"></li>
+                      <li><a href="docs/data.html">Cloud Computing</a></li>
+                      <li class="divider"></li>
                       <li><a href="docs/data.html">SWaT</a></li>
                       <li class="divider"></li>
                       <li><a href="docs/data.html">WADI</a></li>
-                      <li class="divider"></li>
-                      <li><a href="docs/data.html">Miroservice</a></li>
                     </ul>
                 </li>
-                <li ><a href="docs/benchmark.html">Benchmarks</a></li>
+                <li ><a href="docs/benchmark.html">Experiments</a></li>
                 <li ><a  target="_blank" class="dropdown-toggle" data-toggle="dropdown" href="#">
                 	Resources <span class="caret"></span></a>
                 	<ul class="dropdown-menu">
-                		<li><a target="_blank" href="#">Github</a></li>
+                		<li><a target="_blank" href="https://github.com/KnowledgeDiscovery/rca_benchmark">Github</a></li>
                 		<li><a href="docs/pub.html">Papers</a></li>
+                        <li><a href="https://github.com/KnowledgeDiscovery/rca_benchmark">Baselines</a></li>
                 	</ul>
                 <li ><a href="docs/update.html">Updates</a></li>
             </div>
@@ -67,33 +70,57 @@
         <div class="wrapper">
             <div class="header-container jumbotron">
 			    <div class="container">
-			        <h1 style="font-family: 'Merienda', cursive;color:white;">RCABench</h1>
-			        <p style="font-family: 'Merienda', cursive;color:white;"><strong>Datasets and Benchmarks for Root Cause Analysis with Machine Learning<strong></p>
+			        <h1 style="font-family: 'Merienda', cursive;color:white;">Lemma-RCA</h1>
+			        <p style="font-family: 'Merienda', cursive;color:white;"><strong>Multi-modal Datasets for Root Cause Analysis<strong></p>
 			        <p><a class="btn btn-primary btn-lg" href="./docs/data.html" role="button">Download</a> </p>
 			    </div>
 			</div>
+            <br>
 
 			<div class="container">
+
 			    <div class="row">
 			        <div class="col-md-7">
 			            <p class="lead", style="text-align: justify;">
 			                <font size="5">
-			                
+			                Root Cause Analysis (RCA) is a task of identifying system faults within a complex network environment. Lemma-RCA is a collection of datasets meticulously desgined for this task. Lemma-RCA datasets are multi-domain, multi-modal and contain real system faults. The datasets are released under the cc-BY-NC license and hosted on Huggingface, the codes are available on Github.
 			                </font>
 			            </p>
 			        </div>
 			        <div class="col-md-5 text-center">
-			            <img src="./assets/img/rca.jpg" alt="Placeholder for teaser" class="img-responsive">
+			            <img src="./assets/img/rca.png" alt="Placeholder for teaser" class="img-responsive">
 
 			        </div>
 			    </div>
+
+                <br>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h1 class="text-center"><a href="#"><i class="fa fa-database" aria-hidden="true"></i></a></h1>
+                        <h3 class="text-center"><a href="#"> Multiple Domains</a></h3>
+                        <p class="f3-light">Lemma-RCA covers two domains: Microservice (IT Operation) and Water treatment/distribution (OT Operation). Each domain contains two datasets.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1 class="text-center"><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i></a></h1>
+                        <h3 class="text-center"><a href="#">Real System Faults</a></h3>
+                        <p class="f3-light"> Each dataset contains various system faults simulated from real-world scenarios. For details, please check our Github page.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1 class="text-center"><a href="/docs/benchmarks.html"><i class="fa fa-line-chart" aria-hidden="true"></i></a></h1>
+                        <h3 class="text-center"><a href="/docs/benchmarks.html"> Unified Evaluation</a></h3>
+                        <p class="f3-light"> Lemma-RCA datasets are evaluated with eight causal learning baselines in four settings: online/offline with single/multiple modality data. </p>
+                    </div>
+                </div>
+
 			</div>
+
+
     		<hr>
     		<div class="container">
     			<div class="row">
     				<div class="col-md-12">
     					<h3>Citation</h3>
-    					<p>If you use RCABench in your work, please cite <a href="#">our paper</a> (Bibtex below).</p>
+    					<p>If you use Lemma-RCA in your work, please cite <a href="#">our paper</a> (Coming soon!).</p>
     					<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 		    			</code></pre></div></div>
     				</div>
@@ -114,7 +141,7 @@
     <div class="container">
 
         <p class="text-center">
-            RCABench 2024
+            Lemma-RCA 2024
         </p>
 
         <!-- <p class="text-muted">Place sticky footer content here.</p> -->

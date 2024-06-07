@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
-    <title>RCABench | A collection of benchmark datasets for Root Cause Analysis with Machine Learning</title>
+    <title>Lemma-RCA| A Large Collection of Multi-modal Benchmark Datasets for Root Cause Analysis</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async
           src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
@@ -35,7 +35,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="/">
-                <span style="font-family: 'Ma Shan Zheng', cursive;">RCABench</span>
+                <span style="font-family: 'Merienda', cursive;">Lemma-RCA</span> </a>
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
@@ -46,19 +46,22 @@
                     Datasets <span class="caret"></span>
                 </a>
                     <ul class="dropdown-menu">
+                      <li><a href="data.html">Product Review</a></li>
+                      <li class="divider"></li>
+                      <li><a href="data.html">Cloud Computing</a></li>
+                      <li class="divider"></li>
                       <li><a href="data.html">SWaT</a></li>
                       <li class="divider"></li>
                       <li><a href="data.html">WADI</a></li>
-                      <li class="divider"></li>
-                      <li><a href="data.html">Miroservice</a></li>
                     </ul>
                 </li>
-                <li ><a href="#">Benchmarks</a></li>
+                <li ><a href="#">Experiments</a></li>
                 <li ><a  target="_blank" class="dropdown-toggle" data-toggle="dropdown" href="#">
                   Resources <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a target="_blank" href="#">Github</a></li>
-                    <li><a href="docs/pub.html">Papers</a></li>
+                    <li><a target="_blank" href="https://github.com/KnowledgeDiscovery/rca_benchmark">Github</a></li>
+                    <li><a href="pub.html">Papers</a></li>
+                    <li><a href="https://github.com/KnowledgeDiscovery/rca_benchmark">Baselines</a></li>
                   </ul>
                 <li ><a href="update.html">Updates</a></li>
             </div>
@@ -71,7 +74,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h3>Benchmarks</h3>
+            <h3>Experiment Setup</h3>
             <hr />
             
             <h5> Evaluation Metrics</h5>
@@ -89,12 +92,12 @@
 
             <h5> Baseline Methods</h5>
 
-            <table style="width:80%">
+            <table style="width:90%">
               <thead>
                 <tr>
                   <th style="text-align: center">Method</th>
                   <th style="text-align: center">Main Technique</th>
-                  <th style="text-align: center">Modality</th>
+                  <th style="text-align: center">Online/Offline</th>
                   <th style="text-align: center">Time</th>
                 </tr>
               </thead>
@@ -102,52 +105,132 @@
                  <tr>
                   <td style="text-align: center"> PC </td>
                   <td style="text-align: center"> Constrain-based independence test</td>
-                  <td style="text-align: center">Single</td>
+                  <td style="text-align: center">Offline</td>
                   <td style="text-align: center">2003</td>
                 </tr>
                 <tr>
                   <td style="text-align: center"> DyNotears </td>
                   <td style="text-align: center"> Dynamic Bayesian network</td>
-                  <td style="text-align: center">Single</td>
+                  <td style="text-align: center">Offline</td>
                   <td style="text-align: center">2020</td>
                 </tr>
                 <tr>
                   <td style="text-align: center"> C-LSTM </td>
                   <td style="text-align: center"> Nonlinear Granger causality</td>
-                  <td style="text-align: center">Single</td>
+                  <td style="text-align: center">Offline</td>
                   <td style="text-align: center">2022</td>
                 </tr>
                 <tr>
                   <td style="text-align: center"> GOLEM </td>
                   <td style="text-align: center"> Relaxation of Notears</td>
-                  <td style="text-align: center">Single</td>
+                  <td style="text-align: center">Offline</td>
                   <td style="text-align: center">2020</td>
                 </tr>
                 <tr>
                   <td style="text-align: center"> REASON </td>
                   <td style="text-align: center"> Interdependent network</td>
-                  <td style="text-align: center">Single</td>
+                  <td style="text-align: center">Offline</td>
                   <td style="text-align: center">2023</td>
                 </tr>
                 <tr>
-                  <td style="text-align: center"> Nezha </td>
+                  <td style="text-align: center"> CORAL </td>
+                  <td style="text-align: center"> Incremental disentagled causal graph learning</td>
+                  <td style="text-align: center">Online</td>
+                  <td style="text-align: center">2023</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center"> Notears </td>
                   <td style="text-align: center"> </td>
-                  <td style="text-align: center">Multiple</td>
+                  <td style="text-align: center">Online</td>
                   <td style="text-align: center">2023</td>
                 </tr>
                 <tr>
                   <td style="text-align: center"> Mulan </td>
                   <td style="text-align: center"> Modality correlation-based method</td>
-                  <td style="text-align: center">Multiple</td>
+                  <td style="text-align: center">Online</td>
+                  <td style="text-align: center">2024</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p style='margin-top:0.5cm ;'> For detailed experimental results, Please refer to the Experiment sectino in our paper. </p>
+
+
+
+            
+<!--             <h5> Evaluation Results -- Online RCA</h5>
+            <span>All Datasets</span>
+
+            <table style="width:90%">
+              <thead>
+                <tr>
+                  <th style="text-align: center">Dataset</th>
+                  <th style="text-align: center">Model</th>
+                  <th style="text-align: center">PR@1</th>
+                  <th style="text-align: center">PR@5</th>
+                  <th style="text-align: center">PR@10</th>
+                  <th style="text-align: center">MRR</th>
+                  <th style="text-align: center">MAP@3</th>
+                  <th style="text-align: center">MAP@5</th>
+                  <th style="text-align: center">MAP@10</th>
+                </tr>
+              </thead>
+              <tbody>
+                 <tr>
+                  <td style="text-align: center"> Product Review </td>
+                  <td style="text-align: center"> CORAL</td>
+                  <td style="text-align: center"> </td>
+                  <td style="text-align: center"> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: center">  </td>
+                  <td style="text-align: center"> NOTEARS </td>
+                  <td style="text-align: center">Offline</td>
+                  <td style="text-align: center">2020</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center">  </td>
+                  <td style="text-align: center"> GOLEM</td>
+                  <td style="text-align: center">Offline</td>
+                  <td style="text-align: center">2022</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center"> GOLEM </td>
+                  <td style="text-align: center"> Relaxation of Notears</td>
+                  <td style="text-align: center">Offline</td>
+                  <td style="text-align: center">2020</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center"> REASON </td>
+                  <td style="text-align: center"> Interdependent network</td>
+                  <td style="text-align: center">Offline</td>
+                  <td style="text-align: center">2023</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center"> CORAL </td>
+                  <td style="text-align: center"> Incremental disentagled causal graph learning</td>
+                  <td style="text-align: center">Online</td>
+                  <td style="text-align: center">2023</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center"> Notears </td>
+                  <td style="text-align: center"> </td>
+                  <td style="text-align: center">Online</td>
+                  <td style="text-align: center">2023</td>
+                </tr>
+                <tr>
+                  <td style="text-align: center"> Mulan </td>
+                  <td style="text-align: center"> Modality correlation-based method</td>
+                  <td style="text-align: center">Online</td>
                   <td style="text-align: center">2024</td>
                 </tr>
               </tbody>
             </table>
 
 
-            <h5> Evaluation Results</h5>
+             <h5> Evaluation Results -- Offline RCA</h5> -->
 
-            
+
           </div>
         </div>
       </div>
@@ -157,7 +240,7 @@
 <footer class="footer">
   <div class="container">
       <p class="text-center">
-          RCABench 2024
+          Lemma-RCA 2024
       </p>
   </div>
 </footer>
