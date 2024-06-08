@@ -4,7 +4,7 @@ Website for LEMMA-RCA: A Large Multi-modal Multi-domain Dataset for Root Cause A
 
 ### File directory
 src
-
+```
   --|baseline
   
         --|offline
@@ -28,6 +28,6 @@ src
         --|drain3_parse.py
         --|README.md
         --|drain3.yaml
-
+```
 ###
       
