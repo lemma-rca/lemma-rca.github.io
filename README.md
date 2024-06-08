@@ -2,15 +2,23 @@
 
 Website for LEMMA-RCA: A Large Multi-modal Multi-domain Dataset for Root Cause Analysis.
 
-### file directory
+### File directory
 src
+
   --|baseline
+  
         --|offline
+        
               --|Dynotears
+              
               --|FastPC
+              
               --|GNN
+              
               --|GOLEM
+              
               --|LSTM
+              
         --|online
               --|
               --|
