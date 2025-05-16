@@ -23,28 +23,28 @@
     </script>
 </head>
 
-
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container navbar-container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">
-                <span style="font-family: 'Merienda', cursive;">LEMMA-RCA</span> </a>
-            </a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <div class="navbar-right">
-                <ul class="nav navbar-nav">
-                <li ><a href="../index.html">Home</a></li>
-                <!-- <li ><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <div class="container navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <span style="font-family: 'Merienda', cursive;">LEMMA-RCA</span> </a>
+                </a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../index.html">Home</a></li>
+                        <!-- <li ><a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     Datasets <span class="caret"></span> -->
-                <!-- </a>
+                        <!-- </a>
                     <ul class="dropdown-menu">
                       <li><a href="data.html">Product Review</a></li>
                       <li class="divider"></li>
@@ -55,77 +55,47 @@
                       <li><a href="data.html">WADI</a></li>
                     </ul>
                 </li> -->
-                <li ><a href="data.html">Datasets</a></li>
-                <li ><a href="benchmark.html">Experiments</a></li>
-                <li ><a  target="_blank" class="dropdown-toggle" data-toggle="dropdown" href="#">
-                  Resources <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a target="_blank" href=https://github.com/KnowledgeDiscovery/rca_benchmark>Github</a></li>
-                    <li><a href="pub.html">Papers</a></li>
-                    <li><a href="https://github.com/KnowledgeDiscovery/rca_baselines/tree/main/Baseline">Baselines</a></li>
-                  </ul>
-                <li ><a href="update.html">Updates</a></li>
+                        <li><a href="data.html">Datasets</a></li>
+                        <li><a href="benchmark.html">Experiments</a></li>
+                        <li><a target="_blank" class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Resources <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a target="_blank" href=https://github.com/KnowledgeDiscovery/rca_benchmark>Github</a></li>
+                                <!-- Removed the Papers link -->
+                                <li><a
+                                        href="https://github.com/KnowledgeDiscovery/rca_baselines/tree/main/Baseline">Baselines</a>
+                                </li>
+                            </ul>
+                        <li><a href="update.html">Updates</a></li>
 
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <!-- Papers section removed -->
+                </div>
             </div>
         </div>
     </div>
-</nav>
 
-<div class="page-content">
-    <div class="wrapper">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-          	<div id="markdown-content-container">
-            <h2>Papers Using LEMMA-RCA</h2>
-            <hr />
-
-            <ul>
-            	<li>
-            		<div>
-            			<h6><a href="https://dl.acm.org/doi/10.1145/3580305.3599392", target="_blank">Incremental Causal Graph Learning for Online Root Cause Analysis </a></h6>
-            		</div>
-            		<span>Dongjie Wang, Zhengzhang Chen, Yanjie Fu, Yanchi Liu, and Haifeng Chen</span>
-            	</li>
-
-              <li>
-                <div>
-                  <h6><a href="https://dl.acm.org/doi/10.1145/3580305.3599849", target="_blank">Interdependent Causal Networks for Root Cause Localization </a></h6>
-                </div>
-                <span>Dongjie Wang, Zhengzhang Chen, Jingchao Ni, Liang Tong, Zheng Wang, Yanjie Fu, and Haifeng Chen</span>
-              </li>
-
-              <li>
-                <div>
-                  <h6><a href="https://dl.acm.org/doi/10.1145/3589334.3645442", target="_blank">MULAN: Multi-modal Causal Structure Learning and Root Cause Analysis for Microservice Systems </a></h6>
-                </div>
-                <span>Lecheng Zheng, Zhengzhang Chen, Jingrui He, Haifeng Chen</span>
-              </li>
-
-
-            </ul>
-			</div>
-          </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center">
+                LEMMA-RCA 2024
+            </p>
         </div>
-      </div>
-    </div>
-  </div>
+    </footer>
 
-<footer class="footer">
-  <div class="container">
-      <p class="text-center">
-          LEMMA-RCA 2024
-      </p>
-  </div>
-</footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js "></script>
+    <script src="../assets/js/typeahead.bundle.min.js "></script>
 
-
-
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="../assets/js/bootstrap.min.js "></script>
-<script src="../assets/js/typeahead.bundle.min.js "></script>
-
-<script src="../assets/js/main.js "></script>
+    <script src="../assets/js/main.js "></script>
 
 </body>
 
